@@ -1,0 +1,7 @@
+name: mwParkourReborn
+author: monowii
+version: 0.1
+main: me.monowii.mwParkourReborn.ParkourReborn
+commands:
+  parkour:
+    aliases: [pk]
