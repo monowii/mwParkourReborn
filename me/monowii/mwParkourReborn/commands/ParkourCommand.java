@@ -42,7 +42,7 @@ public class ParkourCommand implements CommandExecutor{
 				
 				if (ParkoursManager.getParkours().containsKey(parkourName))
 				{
-					p.sendMessage("§cThis parkour name is already taken!");
+					p.sendMessage("§cThis parkour name is already taken !");
 					return false;
 				}
 				
@@ -56,7 +56,7 @@ public class ParkourCommand implements CommandExecutor{
 				
 				if (!ParkoursManager.getParkours().containsKey(parkourName))
 				{
-					p.sendMessage("§cThis parkour don't exist!");
+					p.sendMessage("§cThis parkour don't exist !");
 					return false;
 				}
 				
@@ -70,7 +70,7 @@ public class ParkourCommand implements CommandExecutor{
 				
 				if (!ParkoursManager.getParkours().containsKey(parkourName))
 				{
-					p.sendMessage("§cThis parkour don't exist!");
+					p.sendMessage("§cThis parkour don't exist !");
 					return false;
 				}
 				

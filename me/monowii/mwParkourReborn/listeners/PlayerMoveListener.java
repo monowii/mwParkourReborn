@@ -38,13 +38,13 @@ public class PlayerMoveListener implements Listener
 				if (parkourPlayer == null || checkpoint.getParkourName() != parkourPlayer.getParkourName())
 				{
 					PlayersManager.addPlayer(p.getUniqueId(), checkpoint.getParkourName());
-					p.sendMessage("§a["+checkpoint.getParkourName()+"]Timer started !");
+					p.sendMessage("§a["+checkpoint.getParkourName()+"] Timer started !");
 				}
 				//If the player restart a parkour
 				else
 				{
 					PlayersManager.restartPlayer(p.getUniqueId(), checkpoint.getParkourName());
-					p.sendMessage("§a["+checkpoint.getParkourName()+"]Timer restarted !");
+					p.sendMessage("§a["+checkpoint.getParkourName()+"] Timer restarted !");
 				}
 				
 			}
@@ -72,7 +72,7 @@ public class PlayerMoveListener implements Listener
 				if (checkpoint.getType() == Checkpoint.Type.CHECKPOINT)
 				{
 					PlayersManager.setCheckpointId(p.getUniqueId(), checkpoint.getId());
-					p.sendMessage("§bCheckpoint passed!");
+					p.sendMessage("§bCheckpoint passed !");
 
 				}
 				else if (checkpoint.getType() == Checkpoint.Type.END)
