@@ -1,6 +1,7 @@
 package me.monowii.mwParkourReborn;
 
 import me.monowii.mwParkourReborn.commands.ParkourCommand;
+import me.monowii.mwParkourReborn.listeners.PlayerInteractListener;
 import me.monowii.mwParkourReborn.listeners.PlayerMoveListener;
 import me.monowii.mwParkourReborn.listeners.PlayerQuitListener;
 import me.monowii.mwParkourReborn.listeners.SignChangeListener;
@@ -22,6 +23,7 @@ public class ParkourReborn extends JavaPlugin
 		pm.registerEvents(new PlayerMoveListener(), this);
 		pm.registerEvents(new PlayerQuitListener(), this);
 		pm.registerEvents(new SignChangeListener(), this);
+		pm.registerEvents(new PlayerInteractListener(), this);
 		
 		getCommand("parkour").setExecutor(new ParkourCommand());
 	}

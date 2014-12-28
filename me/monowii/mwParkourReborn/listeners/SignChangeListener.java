@@ -36,6 +36,22 @@ public class SignChangeListener implements Listener
 						e.setCancelled(true);
 					}
 				}
+				else if (e.getLine(1).equalsIgnoreCase("tp"))
+				{
+					Parkour parkour = ParkoursManager.getParkour(e.getLine(2));
+					
+					if (parkour != null)
+					{
+						e.setLine(0, "§8[mwParkourRe]");
+						e.setLine(1, "§9Tp");
+						e.setLine(2, parkour.getName());
+					}
+					else
+					{
+						p.sendMessage("§cThis parkour don't exist !");
+						e.setCancelled(true);
+					}
+				}
 			}
 			else
 			{
