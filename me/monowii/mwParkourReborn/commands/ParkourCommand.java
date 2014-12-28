@@ -76,9 +76,9 @@ public class ParkourCommand implements CommandExecutor{
 				
 				Checkpoint checkpoint = ParkoursManager.getCheckpoint(p.getLocation());
 				
-				if (checkpoint != null && checkpoint.getParkourName().equals(parkourName))
+				if (checkpoint != null)
 				{
-					p.sendMessage("§cThere is already a checkpoint here from this parkour !");
+					p.sendMessage("§cThere is already a checkpoint here !");
 					return false;
 				}
 				
